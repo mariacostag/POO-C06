@@ -4,14 +4,20 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int horas = 3; // 3 horas consumindo lanches
-        int primeira_hora = 10;
-        int segunda_hora = 4;
-        int terceira_hora = 2;
+        var valor_inteira = 30;
+        var valor_meia = 15;
 
-        int soma = primeira_hora + segunda_hora + terceira_hora;
-        double media = soma / horas;
-        System.out.println("Total: "+ soma);
-        System.out.println("Média: " + media);
+        var total_inteiros = 8 * 30;
+        System.out.println("Total arrecadado com ingressos inteiros: " + total_inteiros);
+
+        var total_meias = 5 * 15;
+        System.out.println("Total arrecadado com meia-entrada: " + total_meias);
+
+        var total_valor = total_inteiros + total_meias;
+        System.out.println("Total arrecadado na sessão: " + total_valor);
+
+        var ingressos_quant = 8 + 5;
+        var media_ingresso = total_valor / ingressos_quant;
+        System.out.println("Valor médio pago por ingresso: " + media_ingresso);
     }
 }
